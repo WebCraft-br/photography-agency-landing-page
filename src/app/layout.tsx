@@ -2,7 +2,7 @@ import type { Metadata} from "next";
 import NextTopLoader from "nextjs-toploader";
 
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+
 import Footer from "@/components/Footer";
 
 
@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
        
-     <Navbar/>
+     
 
         <main className= "relative overflow-hidden">
         {children}
