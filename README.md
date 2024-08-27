@@ -9,7 +9,7 @@ Photography Agency Landing Page
 > NOTE: For `npx shadcn-ui@latest init`: Don't use CSS variables for colors.
 
 # Design
-![design](https://github.com/user-attachments/assets/4296a333-7905-4d76-8619-ed0fcbf064a5)
+![design](./public/design.png)
 
 # Responsibilities
 1. Shivam: `our work` and `awards` section.
