@@ -8,24 +8,35 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
 }
 
 body {
   font-family: Inter;
+  background-color: black;
+  /* background-image: url('/headerimg.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+ 
 }
+
+
+
 
 @layer utilities {
   .btn_white { 
     @apply  border-white bg-white px-8 py-3 text-green-50
   }
-  .btn_white_text  { 
-    @apply  border-white bg-white px-8 py-3 text-gray-90
+  .btn_white_text {
+    @apply border-white bg-zinc-400 px-8 py-3 text-white; /* Correct Tailwind class */
   }
-  .btn_green  { 
-    @apply  border-green-50 bg-green-50 px-8 py-5 text-white
+  
+  .btn_green {
+    @apply border-white bg-zinc-400 px-8 py-2 text-white; /* Example for green button */
   }
   .btn_dark_green { 
-    @apply bg-white px-8 py-4 text-black transition-all hover:bg-black;
+    @apply bg-white px-8 py-4 text-black transition-all hover:bg-gray-400;
   }
   
   .btn_dark_green_outline { 
@@ -127,9 +138,9 @@ body {
   }
 
   /* Hero */
-  .hero-map {
+  /* .hero-map {
     @apply absolute right-0 top-0 h-screen w-screen bg-pattern-2 bg-cover bg-center md:-right-28 xl:-top-60;
-  }
+  } */
 
   /* Camp */
   .camp-quote {
@@ -156,4 +167,10 @@ body {
 .hide-scrollbar {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+}
+@layer components {
+  .custom-h1 {
+    @apply font-semibold text-4xl lg:text-[55px] text-white leading-tight;
+    line-height: 1.3; /* Customize line height if needed */
+  }
 }
