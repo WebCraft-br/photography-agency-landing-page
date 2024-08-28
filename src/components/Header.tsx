@@ -8,12 +8,12 @@ const Header = () => {
       <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
         <div className="hero-map"></div>
         <h1 className="custom-h1 whitespace-nowrap mt-16 text-center xl:text-left">
-          Capturing beautiful <br />
-          moments inside lens and <br />
-          shutterspeed
+          <p>Capturing beautiful </p>
+         <p className='mt-4'> moments inside lens and </p>
+         <p className='mt-4'> shutterspeed</p>
         </h1>
 
-        <div className="flex flex-col w-md mt-40 space-y-4 xl:space-y-6">
+        <div className="flex flex-col w-md mt-40 space-y-4 xl:space-y-6 mb-1">
           <div className="flex flex-wrap gap-3 justify-center xl:justify-start">
             <Button type="button" title="Landscape" variant="btn_green" />
             <Button type="button" title="Wildlife" variant="btn_white_text" />
@@ -29,7 +29,7 @@ const Header = () => {
       {/* Image Section */}
 
 
-      <div className="relative flex flex-col items-center w-full max-w-8xl mx-auto  mt-72 ml-44">
+      <div className="relative flex flex-col items-center w-full max-w-8xl mx-auto  mt-80 ml-44">
   {/* Horizontal Line Section */}
   <div className="relative flex items-center w-full max-w-8xl mx-auto mb-8">
     <span className="text-white text-lg ml-24">01</span>
