@@ -15,7 +15,7 @@ const Navbar = () => {
     <nav className="navbar flexBetween max-container padding-container relative z-30 py-5 bg-gradient-to-b from-transparent to-transparent">
       <div className="flex items-center space-x-2">
         <Link href="/">
-          <img src="/logo.png" alt="CREACY" width={44} height={20} />
+          <img src="/logo.png" alt="CREACY" width={44} height={20} className="rounded-md" />
         </Link>
         <p className="text-white mb-2 text-lg font-semibold">CREACY</p>
       </div>

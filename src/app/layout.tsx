@@ -22,7 +22,7 @@ export default function RootLayout({
        
      
 
-        <main className= "relative overflow-hidden">
+      <main className=" mx-auto  w-[95%]">
         {children}
         </main>
        <Footer/>
