@@ -3,8 +3,8 @@ import Contact from './Contact';
 
 const Footer = () => {
   return (
-    <div className="max-w-full gap-20 pb-10 px-4 sm:px-6 lg:px-10 mt-20">
-      <div className="bg-[#363733] text-gray-300 px-4 sm:px-5 py-7 rounded-2xl">
+    <div className="max-w-full py-10">
+      <div className="bg-[#363733] text-gray-300 sm:px-5 py-5 rounded-2xl">
         <Contact />
         <div className="px-4 sm:px-6 lg:px-8">
           <div className="mt-10 border-t border-gray-700 pt-6 flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0 sm:justify-between">

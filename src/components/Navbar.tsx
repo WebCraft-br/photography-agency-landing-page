@@ -1,8 +1,8 @@
-"use client"; 
+"use client";
 import { useState } from "react";
 import { NAV_LINKS } from "../../constants";
 import Link from "next/link";
-import Button from "./ui/button";
+import Button from "./ui/HeaderButton";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -12,27 +12,27 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar flexBetween max-container padding-container relative z-30 py-5 bg-gradient-to-b from-transparent to-transparent">
+    <nav className="navbar flexBetween max-container px-10 relative z-30 py-5 bg-gradient-to-b from-transparent to-transparent">
       <div className="flex items-center space-x-2">
         <Link href="/">
-          <img src="/logo.png" alt="CREACY" width={44} height={20} className="rounded-md" />
+          <img src="/logo.png" alt="CREACY" className="rounded-2xl w-12 h-12" />
         </Link>
-        <p className="text-white mb-2 text-lg font-semibold">CREACY</p>
+        <p className="text-[#1C1A1F] text-lg font-semibold">CREACY</p>
       </div>
 
       {/* Desktop Links */}
-      <ul className="hidden lg:flex gap-6 items-center rounded-full bg-white/10 p-3 shadow-lg">
+      <ul className="hidden lg:flex gap-6 items-center rounded-full bg-[#a1a8a8] p-3 px-7">
         {NAV_LINKS.map((link, index) => (
           <li key={link.key} className="flex items-center">
             <Link
               href={link.href}
-              className={`regular-16 text-white hover:text-gray-300 transition-all ${index < NAV_LINKS.length - 1 ? 'pr-4' : ''}`}
+              className={`regular-16 text-white hover:text-[#1C1A1F] transition-all ${index < NAV_LINKS.length - 1 ? 'pr-5' : ''}`}
             >
               {link.label}
             </Link>
             {/* Vertical line */}
             {index < NAV_LINKS.length - 1 && (
-              <div className="w-[1px] h-6 bg-gray-500 mx-2"></div>
+              <div className="w-[1px] h-6 bg-[#d1d0d0] mx-2"></div>
             )}
           </li>
         ))}
@@ -91,8 +91,8 @@ const Navbar = () => {
             </li>
           ))}
           <Button type="button" title="BOOK A CALL" variant="btn_dark_green" />
-       {/* Add the arrow button to the mobile menu */}
-       <button className="w-12 h-12 inline-flex items-center justify-center bg-white rounded-full shadow-md hover:bg-gray-100 focus:outline-none">
+          {/* Add the arrow button to the mobile menu */}
+          <button className="w-12 h-12 inline-flex items-center justify-center bg-white rounded-full shadow-md hover:bg-gray-100 focus:outline-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -110,7 +110,7 @@ const Navbar = () => {
           </button>
         </ul>
       )}
-      
+
     </nav>
   );
 };
