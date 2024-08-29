@@ -4,6 +4,8 @@ import Navbar from "@/components/Navbar";
 import About from "@/components/About";
 import Expertise from "@/components/Expertise";
 import Footer from "@/components/Footer";
+import Work from "@/components/Work";
+import Awards from "@/components/Awards";
 
 import "./globals.css";
 
@@ -15,8 +17,10 @@ export default function Home() {
         <Header />
       </div>
 
-      <About />
-      <Expertise />
+      {/* <About /> */}
+      {/* <Expertise /> */}
+      <Work />
+      <Awards />
       <Footer />
     </>
   );
