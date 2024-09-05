@@ -10,26 +10,26 @@ const awardsData = [
     },
     {
         year: "2017",
-        title: "Travel Photographer Of The Year",
+        title: "Fotógrafo de Viagem do Ano",
     },
     {
         year: "2022",
-        title: "Magnum Photography Awards",
+        title: "Prêmios Magnum de Fotografia",
     },
     {
         year: "2023",
-        title: "International Photography Awards",
+        title: "Prêmios Internacionais de Fotografia",
     },
 ];
 
-const Award = () => {
+const Awards = () => {
     return (
         <section className="bg-[#1C1A1F] pt-10 text-white mt-20">
-            <CardDescription className="py-4 text-[#808080]">(04) <br/> Awards</CardDescription>
+            <CardDescription className="py-4 text-[#808080]">(04) <br/> Prêmios</CardDescription>
             <div className="flex flex-col lg:flex-row justify-end items-start mb-12">
                 <div className="max-w-xl">
                     <Headline className="text-left">
-                        <span className="text-white font-bold">Award</span> is a pixel that <span className="text-white font-bold">reflecting</span> our ongoing <span className="text-white font-bold">dedication</span> to innovation and excellence
+                        <span className="text-white font-bold">Prêmio</span> é um pixel que <span className="text-white font-bold">reflete</span> nossa constante <span className="text-white font-bold">dedicação</span> à inovação e excelência
                     </Headline>
                 </div>
             </div>
@@ -56,12 +56,12 @@ const Award = () => {
                 <div className="flex flex-col lg:w-1/2 mt-6 lg:mt-0 text-left">
                     <img
                         src="/card/afternoon.jpg"
-                        alt="A Quiet Afternoon in the Countryside"
+                        alt="Uma Tarde Tranquila no Campo"
                         className="w-full h-1/2 rounded-2xl mx-auto"
                     />
-                    <CardTitle className="py-4">A Quiet Morning in the Countryside</CardTitle>
+                    <CardTitle className="py-4">Uma Manhã Tranquila no Campo</CardTitle>
                     <CardDescription className="text-[#808080]">
-                        As the sun gently descends in the western sky, casting a warm golden glow upon the rolling hills and meadows, the countryside settles into a tranquil serenity.
+                        Enquanto o sol desce suavemente no céu ocidental, lançando um brilho dourado quente sobre as colinas e campos ondulados, o campo se acomoda em uma serenidade tranquila.
                     </CardDescription>
                 </div>
             </div>
@@ -69,5 +69,4 @@ const Award = () => {
     );
 };
 
-
-export default Award;
+export default Awards;

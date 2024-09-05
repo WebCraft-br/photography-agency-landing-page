@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar flexBetween max-container px-10 relative z-30 py-5 bg-gradient-to-b from-transparent to-transparent lg:static fixed top-0 left-0 right-0">
+    <nav className="navbar flexBetween max-container px-10 relative z-30 py-5 bg-gradient-to-b from-transparent to-transparent  fixed top-0 left-0 right-0">
       <div className="flex items-center space-x-2">
         <Link href="/">
           <img src="/logo.png" alt="CREACY" className="rounded-2xl w-12 h-12" />
@@ -21,7 +21,7 @@ const Navbar = () => {
       </div>
 
       {/* Desktop Links */}
-      <ul className="hidden lg:flex gap-6 items-center rounded-full bg-[#a1a8a8] p-3 px-7">
+      <ul className="lg:flex gap-6 items-center rounded-full bg-[#a1a8a8] p-3 px-7">
         {NAV_LINKS.map((link, index) => (
           <li key={link.key} className="flex items-center">
             <Link
@@ -40,7 +40,7 @@ const Navbar = () => {
 
       {/* Right Section */}
       <div className="lg:flex hidden items-center">
-        <Button type="button" title="BOOK A CALL" variant="btn_dark_green" />
+        <Button type="button" title="LIGUE AGORA" variant="btn_dark_green" />
         <button className="w-12 h-12 inline-flex items-center justify-center bg-white rounded-full shadow-md hover:bg-gray-100 focus:outline-none ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -129,7 +129,7 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="flex flex-col items-center gap-4">
-            <Button type="button" title="BOOK A CALL" variant="btn_dark_green" />
+            <Button type="button" title="LIGUE AGORA" variant="btn_dark_green" />
             <button className="w-12 h-12 inline-flex items-center justify-center bg-white rounded-full shadow-md hover:bg-gray-100 focus:outline-none">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

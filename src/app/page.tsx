@@ -2,7 +2,6 @@
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import About from "@/components/About";
-import Expertise from "@/components/Expertise";
 import Footer from "@/components/Footer";
 import Work from "@/components/Work";
 import Awards from "@/components/Awards";
@@ -17,8 +16,7 @@ export default function Home() {
         <Header />
       </div>
 
-      {/* <About /> */}
-      {/* <Expertise /> */}
+      <About />
       <Work />
       <Awards />
       <Footer />
